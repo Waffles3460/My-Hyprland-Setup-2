@@ -1,0 +1,114 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Monocraft", "JetBrainsMono Nerd Font", monospace;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e2e8f0;
+}
+
+
+.modules-left, .modules-center, .modules-right {
+    background: rgba(18, 20, 29, 0.88);
+    border: 1px solid rgba(100, 181, 246, 0.25);
+    border-radius: 10px;
+    padding: 2px 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+#workspaces button {
+    padding: 0 6px;
+    color: #64748b;
+    background: transparent;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    color: #f1f5f9;
+    background: rgba(100, 181, 246, 0.15);
+}
+
+#workspaces button.active {
+    color: #64b5f6;
+    background: rgba(100, 181, 246, 0.2);
+}
+
+#window {
+    color: #94a3b8;
+    padding: 0 8px;
+}
+
+
+#clock {
+    color: #81c784;
+    padding: 0 10px;
+}
+
+
+#pulseaudio {
+    color: #64b5f6; 
+    padding: 0 8px;
+}
+
+#cpu {
+    color: #ffb74d; 
+    padding: 0 8px;
+}
+
+#memory {
+    color: #ba68c8; 
+    padding: 0 8px;
+}
+
+#battery {
+    color: #4dd0e1;
+    padding: 0 8px;
+}
+
+#battery.warning {
+    color: #ffb74d;
+}
+
+#battery.critical {
+    color: #e57373;
+}
+
+#custom-nixos {
+    background: rgba(126, 186, 228, 0.2);
+    color: #7ebae4;
+    font-size: 18px; 
+    border: 1px solid rgba(126, 186, 228, 0.5);
+    border-radius: 6px;
+    padding: 0px 10px;
+    margin-left: 6px;
+    transition: all 0.2s ease;
+}
+
+#custom-nixos:hover {
+    background: rgba(126, 186, 228, 0.45);
+    color: #ffffff;
+    border-color: #7ebae4;
+    box-shadow: 0px 0px 12px rgba(126, 186, 228, 0.8);
+}
+
+#custom-cava {
+    color: #600ec5; 
+    padding: 0 8px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#custom-media {
+    color: #bd93f9;
+    background-color: #282a36;
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+    font-family: "JetBrains Mono", monospace;
+}
